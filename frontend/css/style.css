@@ -1,0 +1,482 @@
+/*
+#INSIGNIA CRUZADA 2016
+*/
+
+/* Layout General
+   ========================================================================== */
+
+*{
+	margin: 0:
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+h1, h2, h3, h4{
+	line-height: 1.5em;
+	font-family: 'Arvo', serif;
+}
+
+h2{font-size: 35px;}
+h3{font-size: 25px;}
+
+p{
+	line-height: 1.7em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 970px !important;
+	}
+} 
+
+a {color: #665A4C; text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+header, footer, div.slide{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.wrap{
+	display: block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+
+/* HEADER
+   ========================================================================== */
+
+header{
+	background-color: #005994;
+	width: 100%;
+	height: 650px;
+}
+
+header .wrap{
+	position: absolute;
+	max-width: 100%;
+	top: 0;
+	z-index: 100;
+	height: 650px;
+}
+
+header .wrap .corporativo{
+	position: absolute;
+	top: 45px;
+	left: 45px;
+}
+.corporativo, .corporativo .logo{ display: block; float: left; padding-right: 10px;}
+
+header .wrap .corporativo .logo.uc{
+	height: 106px;
+}
+
+header .wrap .corporativo .logo.umbro{
+	height: 44px;
+	padding-top: 20px;
+}
+
+.corporativo .logo img{
+	height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+	header .wrap .corporativo .logo.uc {
+		height: 50px;
+	}
+}
+
+header .wrap .llamado{
+	margin: 170px auto 0;
+}
+
+header .wrap .llamado h1{
+	margin: 0;
+    line-height: 65px;
+    font-size: 70px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    letter-spacing: -0.05em;
+}
+
+@media screen and (max-width: 991px) {
+	header .wrap .llamado h1 {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header .wrap .llamado {
+		margin: 100px auto 0;
+	}
+
+	header .wrap .llamado h1 {
+		float: initial;
+		text-align: center;
+		font-size: 30px;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+}
+
+header .wrap .llamado img{
+	height: 190px;
+}
+
+header .wrap p{
+	width: 700px;
+	margin: 15px 0;
+	text-align: left;
+	padding-right: 200px;
+}
+
+
+@media screen and (max-width: 767px) {
+	header .wrap p {
+		text-align: center;
+		width: 100%;
+		padding-right: 0px;
+	}
+
+	header .wrap .llamado img {
+		height: 170px;
+	}
+}
+
+header .wrap .go{
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	width: 57px;
+	height: 35px;
+	margin-left: -28px;
+	background: url('../img/flecha-down.png') 0 0 no-repeat transparent;
+}
+
+header .img-bg{
+	display: block;
+	width: 100%;
+	height: 650px;
+	overflow: hidden;
+}
+
+header .img-bg img{
+	width: 100%;
+	min-width: 1440px;
+	height: auto;
+	min-height: 650px;
+}
+
+/* FB CONNECT
+   ========================================================================== */
+
+
+#fb-connect-space{
+	display: block;
+	width: 100%;
+	height: 100px;
+	background-color: #003253;
+	padding: 30px 0px;
+}
+
+#fb-connect-space .fb-btn {
+	max-height: 40px;
+	cursor: pointer;
+}
+
+/* FB VOTO
+   ========================================================================== */
+
+
+#voto{
+	color: #006AB0;
+	margin: 50px 0 100px;
+}
+
+#voto h2, #voto h3{font-weight: 700;}
+
+#voto .opcion, #voto .resultados{
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+}
+
+#voto .opcion h2{
+    margin: -25px 0 0;
+}
+
+#voto .opcion .boton-voto{
+	display: block;
+	width: 100%;
+	height: 65px;
+	color: #ffffff;
+	font-family: 'Arvo';
+	font-weight: 700;
+	font-size: 30px;
+	background-color: #003253;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#voto .opcion .boton-voto a{
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #ffffff;
+	padding: 10px 0 0;
+	font-size: 30px;
+	background-color: #006AB0;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#voto .opcion .boton-voto a:hover{
+	text-decoration: none;
+	background-color: #0079C9;
+}
+
+#voto .opcion.a{position: absolute; left:0;}
+#voto .opcion.b{position: absolute; right:0;}
+
+#voto .resultados {
+	padding-top: 120px;
+}
+
+#voto .resultados .title{
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	#voto h2, #voto h3{line-height: 1.2;}
+
+	#voto .opcion.a{position: relative; left:initial; margin-bottom: 50px; margin-top: 30px;}
+	#voto .opcion.b{position: relative; right:initial;}
+
+	#voto .resultados .title {
+		display: block;
+	}
+}
+
+#voto .resultados .resultado{
+	display: block;
+	position: relative;
+	margin: 0 10px;
+	width: 130px;
+	height: 400px;
+	float: left;
+	background-color: #E5E5E5;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#voto .resultados .resultado h3{
+	margin: 0;
+	font-size: 35px;
+}
+
+#voto .resultados .resultado h3 span{ font-size: 25px;}
+
+#voto .resultados .resultado .barra{
+	width: 130px;
+	position: absolute;
+	bottom: 0;
+	background-color: #005994;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#voto .resultados img{
+	display: none;
+	width: 100px;
+	height: auto;
+}
+
+
+/* FB COTADOR
+   ========================================================================== */
+
+
+#contador{
+	display: block;
+	width: 100%;
+	background-color: #006AB0;
+	height: 400px;
+	padding-top: 80px;
+	font-weight: 400;
+	font-size: 30px
+}
+
+#contador .cuenta-regresiva {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+#contador .cuenta-regresiva .texto {
+	font-size: 20px;
+	font-weight: 300;
+	display: block;
+	text-align: center;
+}
+
+#contador .cuenta-regresiva .item {
+	position: relative;;
+}
+
+#contador .cuenta-regresiva .item .label {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+#contador .texto-2 {
+	margin-top: 30px;
+}
+
+#contador .texto-3 {
+	font-weight: 300;
+}
+
+#fin{
+	display: block;
+	width: 100%;
+	height: 80px;
+	background-color: #003253;
+	overflow: hidden;
+}
+
+#fin .corporativo{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+#fin p{
+    padding: 27px 0 0 85px;
+    float: left;
+    text-align: left;
+    margin: 0;
+    font-size: 14px;
+}
+
+#fin .corporativo .logo.uc{
+	width: 14px;
+	height: 52px;
+}
+
+#fin .corporativo .logo.umbro{
+	width: 32px;
+	height: 22px;
+	padding-top: 10px;
+}
+
+
+
+
+.malla {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(../img/malla.png);
+	z-index: 99999;
+}
+
+.malla .content {
+	color: #fff;
+	background-color: #005994;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	width: 100%;
+	max-width: 700px;
+	margin: 5% auto 0;
+	position: relative;
+	text-align: center;
+	padding: 80px 30px;
+}
+
+.malla .content .fb-btn {
+	margin-top: 30px;
+	max-height: 40px;
+	cursor: pointer;
+}
+
+.malla .content .btn-close {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.gracias .opcion {
+	width: 19%;
+	vertical-align: middle;
+}
+
+.gracias .info {
+	width: 80%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.gracias .info h1 {
+	margin: 0px;
+}
+
+.gracias .info .redes {
+	margin-top: 10px;
+}
+
+.gracias .info .redes img {
+	width: 50px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.resena .imagen {
+	width: 29%;
+	vertical-align: middle;
+}
+
+.resena .info {
+	width: 70%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.resena .info p {
+	font-size: 15px;
+}

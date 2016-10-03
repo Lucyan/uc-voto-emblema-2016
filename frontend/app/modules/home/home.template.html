@@ -1,0 +1,164 @@
+<header>
+	<div class="wrap">
+		<div class="corporativo">
+			<div class="logo uc">
+				<img src="img/uc-logo.png">
+			</div>
+			<div class="logo umbro">
+				<img src="img/umbro.png">
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 llamado">
+					<h1>UN HOMENAJE <br>
+						DE NUESTRA <br>
+						HISTORIA!
+					</h1>
+					<img src="img/OpcionA.png">
+					<img src="img/OpcionB.png">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<p>Vota por una de estas insignias que fueron parte de una época importante de nuestra historia, para que vuelva a lucir en la camiseta conmemorativa de los 80 años de Universidad Católica, que se utilizará durante el mes de abril de 2017.</p>
+				</div>
+			</div>
+		</div>
+		
+		<a class="go"></a>
+
+	</div>
+
+	<div class="img-bg">
+		<img src="img/bg-header.jpg">
+	</div>
+</header>
+
+<div id="fb-connect-space" ng-show="!userLogin">
+	<div class="wrap">
+		Para Votar, debes contectarte con Facebook 
+		<img src="img/btn-face.png" class="fb-btn" ng-click="login();">
+	</div>
+</div>
+
+<section id="voto">
+	<div class="wrap">
+		<h2>¿Cuál debe ser la insignia conmemorativa?</h2>
+		<div class="opcion a">
+			<p>Opción 1</p>
+			<h2>Histórica</h2>
+			<a href="#">Ver reseña</a>
+			<img src="img/OpcionA-voto.jpg">
+			<span class="boton-voto">
+				<a href="#" ng-click="votar(1);">votar</a>
+			</span>
+		</div>
+
+		<div class="opcion b">
+			<p>Opción 2</p>
+			<h2>Orígenes</h2>
+			<a href="#" ng-click="showResena2 = true">Ver reseña</a>
+			<img src="img/OpcionB-voto.jpg">
+			<span class="boton-voto">
+				<a href="#" ng-click="votar(2);">votar</a>
+			</span>
+		</div>
+		
+		<div class="resultados">
+			<h3 class="title">Resultados</h3>
+			<div class="resultado a">
+				<h3>{{opcion1}}<span>%</span></h3>
+				<img src="img/OpcionA.png">
+				<div class="barra" style="height:{{opcion1}}%;">
+				</div>
+			</div>
+
+			<div class="resultado b">
+				<h3>{{opcion2}}<span>%</span></h3>
+				<img src="img/OpcionB.png">
+				<div class="barra" style="height:{{opcion2}}%;">
+				</div>
+			</div>
+			<span class="total-votos">Total de votos {{totalVotos}}.</span>
+		</div>
+	</div>
+</section>
+<footer>
+	<div id="contador">
+		<div class="wrap">
+			<span class="texto-1">Quedan solo</span>
+			<div class="cuenta-regresiva">	
+				<span countdown='' date='January 1, 2017 12:00:00'>&nbsp;</span>
+			</div>
+			<div class="texto-2">para cerrar las votaciones</div>
+			<div class="texto-3">Vota ahora y se parte de la historia</div>
+		</div>
+	</div>
+	<div id="fin">
+		<div class="wrap">
+			<div class="corporativo">
+				<div class="logo uc">
+					<img src="img/uc-logo.png">
+				</div>
+				<div class="logo umbro">
+					<img src="img/umbro.png">
+				</div>
+			</div>
+			<p>© 2016 Todos los derechos Reservados</p>
+		</div>
+	</div>
+</footer>
+
+<div class="no-login malla" ng-show="tryvote">
+	<div class="content">
+		<i class="fa fa-times btn-close" aria-hidden="true" ng-click="hidePopup();"></i>
+		<p>PARA VOTAR, INGRESA CON TU CUENTA DE FACEBOOK</p>
+		<img src="img/btn-face.png" class="fb-btn" ng-click="login();">
+	</div>
+</div>
+
+<div class="ya-voto malla" ng-show="yavoto">
+	<div class="content">
+		<i class="fa fa-times btn-close" aria-hidden="true" ng-click="hidePopup();"></i>
+		<p>YA VOTASTE</p>
+	</div>
+</div>
+
+<div class="gracias malla" ng-show="gracias">
+	<div class="content">
+		<i class="fa fa-times btn-close" aria-hidden="true" ng-click="hidePopup();"></i>
+		<img ng-src="{{graciasImg}}" class="opcion">
+		<div class="info">
+			<h1>¡Gracias por tu voto!</h1>
+			<div>Comparte esta encuesta con tus amigos</div>
+			<div class="redes">
+				<img src="img/redes/facebook.png">
+				<img src="img/redes/twitter.png">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="resena malla" ng-show="showResena1">
+	<div class="content">
+		<i class="fa fa-times btn-close" aria-hidden="true" ng-click="hidePopup();"></i>
+		<img src="img/OpcionA.png" class="imagen">
+		<div class="info">
+			<p>Este diseño de estructura compacta, más triangular y con la cruz pegada a los bordes, estuvo presente en gran parte de la historia de Universidad Católica. Además fue la base de nuestra insignia actual, la que ha evolucionado en el tiempo hacia una forma más estilizada y normada en sus características.</p>
+		</div>
+	</div>
+</div>
+
+<div class="resena malla" ng-show="showResena2">
+	<div class="content">
+		<i class="fa fa-times btn-close" aria-hidden="true" ng-click="hidePopup();"></i>
+		<img src="img/resena2.png" class="imagen">
+		<div class="info">
+			<p>Este diseño compuesto por la U-C enlazada, está ligado a nuestros orígenes, ya que fue utilizado por el equipo de fútbol de la Pontificia Universidad Católica antes de ingresar al profesionalismo y previo a la fundación oficial del Club Deportivo Universidad Católica en el año 1937.</p>
+			<p>Posteriormente fue utilizada por grandes porteros de la historia cruzada como Sergio Livingstone y Cristopher Toselli.</p>
+		</div>
+	</div>
+</div>
