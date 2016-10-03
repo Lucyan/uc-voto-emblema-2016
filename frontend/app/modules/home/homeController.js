@@ -2,6 +2,7 @@ votoEmblemaAPP.controller("homeController", function ($scope, $rootScope, User) 
 	$scope.tryvote = false;
 	$scope.yavoto = false;
 	$scope.gracias = false;
+	$scope.showResena1 = false;
 	$scope.showResena2 = false;
 
 	$scope.totalVotos = 0;
@@ -57,6 +58,7 @@ votoEmblemaAPP.controller("homeController", function ($scope, $rootScope, User) 
  		$scope.tryvote = false;
  		$scope.yavoto = false;
  		$scope.gracias = false;
+ 		$scope.showResena1 = false;
  		$scope.showResena2 = false;
  	}
 });

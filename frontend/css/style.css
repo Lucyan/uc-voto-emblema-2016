@@ -98,6 +98,11 @@ header .wrap .corporativo .logo.umbro{
 }
 
 @media screen and (max-width: 767px) {
+	header .wrap .corporativo .logo.umbro {
+		height: 30px;
+		padding-top: 8px;
+	}
+
 	header .wrap .corporativo .logo.uc {
 		height: 50px;
 	}
@@ -154,6 +159,7 @@ header .wrap p{
 		text-align: center;
 		width: 100%;
 		padding-right: 0px;
+		font-size: 15px;
 	}
 
 	header .wrap .llamado img {
@@ -362,6 +368,20 @@ header .img-bg img{
 
 #contador .texto-3 {
 	font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+	#contador .cuenta-regresiva {
+		font-size: 35px;
+	}
+
+	#contador .texto-2 {
+		margin-top: 40px;
+	}
+
+	#contador .texto-2, #contador .texto-3 {
+		font-size: 20px;
+	}
 }
 
 #fin{
