@@ -162,6 +162,9 @@ header .wrap p{
 
 
 @media screen and (max-width: 767px) {
+	.descripcion br{
+		display: none;
+	}
 
 	header .wrap p {
 		text-align: center;
@@ -244,8 +247,28 @@ header .img-bg img{
 }
 
 #voto .opcion h2{
-    margin: -25px 0 0;
+    margin: -15px 0 0;
 }
+
+#voto a.para-resena{
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid #003253;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	color: #003253;
+}
+
+#voto a.para-resena:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #003253;
+}
+
+
 
 #voto .opcion .boton-voto{
 	display: block;
@@ -283,7 +306,7 @@ header .img-bg img{
 #voto .opcion.b{position: absolute; left:0;}
 
 #voto .resultados {
-	padding-top: 90px;
+	padding-top: 120px;
 }
 
 #voto .resultados .title{

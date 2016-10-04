@@ -16,15 +16,15 @@
 						A NUESTRA <br>
 						HISTORIA!
 					</h1>
-					<img src="img/OpcionA.png">
 					<img src="img/OpcionB.png">
+					<img src="img/OpcionA.png">
 				</div>
 			</div>
 			
-			<div class="row">
+			<div class="row descripcion">
 				<div class="col-xs-12">
-					<p>¡Te invitamos a votar! Porque queremos que seas tú el que elijas cuál de estas históricas insignias luciremos en nuestra camiseta conmemorativa de los<b> 80 años de Universidad Católica</b>, que utilizaremos durante el mes de abril de 2017.</p>
-					<p>Antes de votar, te invitamos a revisar la reseña de cada insignia..</p>
+					<p>¡Te invitamos a votar! Porque queremos que seas tú el que elijas cuál de estas históricas insignias luciremos en nuestra camiseta conmemorativa de los<br><b> 80 años de Universidad Católica</b>, que utilizaremos durante el mes de abril de 2017.</p>
+					<p>Antes de votar, te invitamos a revisar la reseña de cada insignia.</p>
 				</div>
 			</div>
 		</div>
@@ -50,9 +50,9 @@
 		<h2>¿Cuál debe ser la insignia conmemorativa?</h2>
 
 		<div class="opcion b">
-			<p>Opción 2</p>
+			<p>Opción 1</p>
 			<h2>Orígenes</h2>
-			<a href="#" ng-click="showResena2 = true">Ver reseña</a>
+			<a href="#" class="para-resena" ng-click="showResena2 = true">Ver reseña</a>
 			<img src="img/OpcionB-voto.jpg">
 			<span class="boton-voto">
 				<a href="#" ng-click="votar(2);">votar</a>
@@ -60,9 +60,9 @@
 		</div>
 
 		<div class="opcion a">
-			<p>Opción 1</p>
+			<p>Opción 2</p>
 			<h2>Histórica</h2>
-			<a href="#" ng-click="showResena1 = true">Ver reseña</a>
+			<a href="#" class="para-resena" ng-click="showResena1 = true">Ver reseña</a>
 			<img src="img/OpcionA-voto.jpg">
 			<span class="boton-voto">
 				<a href="#" ng-click="votar(1);">votar</a>
@@ -85,7 +85,7 @@
 				<div class="barra" style="height:{{opcion1}}%;">
 				</div>
 			</div>
-			
+
 			<span class="total-votos">Total de votos {{totalVotos}}.</span>
 		</div>
 	</div>
