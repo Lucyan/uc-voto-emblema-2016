@@ -98,6 +98,11 @@ header .wrap .corporativo .logo.umbro{
 }
 
 @media screen and (max-width: 767px) {
+	header .wrap .corporativo{
+		top: 20px;
+		left: 20px;
+	}
+
 	header .wrap .corporativo .logo.umbro {
 		height: 30px;
 		padding-top: 8px;
@@ -117,7 +122,9 @@ header .wrap .llamado h1{
     line-height: 65px;
     font-size: 70px;
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+/*	font-family: 'Open Sans', sans-serif; */
     float: left;
     letter-spacing: -0.05em;
 }
@@ -130,15 +137,15 @@ header .wrap .llamado h1{
 
 @media screen and (max-width: 767px) {
 	header .wrap .llamado {
-		margin: 100px auto 0;
+		margin: 80px auto 0;
 	}
 
 	header .wrap .llamado h1 {
 		float: initial;
 		text-align: center;
-		font-size: 30px;
-		line-height: 1.2;
-		margin-bottom: 10px;
+		font-size: 38px;
+		line-height: 1;
+		margin-bottom: 20px;
 	}
 }
 
@@ -150,11 +157,12 @@ header .wrap p{
 	width: 700px;
 	margin: 15px 0;
 	text-align: left;
-	padding-right: 200px;
+/*	padding-right: 200px; */
 }
 
 
 @media screen and (max-width: 767px) {
+
 	header .wrap p {
 		text-align: center;
 		width: 100%;
@@ -199,7 +207,7 @@ header .img-bg img{
 #fb-connect-space{
 	display: block;
 	width: 100%;
-	height: 100px;
+	min-height: 100px;
 	background-color: #003253;
 	padding: 30px 0px;
 }
@@ -207,6 +215,15 @@ header .img-bg img{
 #fb-connect-space .fb-btn {
 	max-height: 40px;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+
+	#fb-connect-space .fb-btn {
+		display: block;
+		clear:both;
+		margin: 10px auto 0;
+	}
 }
 
 /* FB VOTO
@@ -247,10 +264,10 @@ header .img-bg img{
 #voto .opcion .boton-voto a{
 	display: block;
 	width: 100%;
-	height: 50px;
+	height: 55px;
 	color: #ffffff;
-	padding: 10px 0 0;
-	font-size: 30px;
+	padding: 5px 0 0;
+	font-size: 35px;
 	background-color: #006AB0;
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -266,7 +283,7 @@ header .img-bg img{
 #voto .opcion.b{position: absolute; right:0;}
 
 #voto .resultados {
-	padding-top: 120px;
+	padding-top: 90px;
 }
 
 #voto .resultados .title{
@@ -314,10 +331,18 @@ header .img-bg img{
 	-webkit-border-radius: 5px 5px 5px 5px;
 }
 
-#voto .resultados img{
-	display: none;
-	width: 100px;
-	height: auto;
+#voto .resultados img {
+    position: absolute;
+    display: none;
+    width: 50px;
+    height: auto;
+    bottom: 10px;
+    right: 40px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 767px) {
+	#voto .resultados img {display: block;}
 }
 
 
@@ -326,6 +351,7 @@ header .img-bg img{
 
 
 #contador{
+	font-family: Arial;
 	display: block;
 	width: 100%;
 	background-color: #006AB0;
@@ -362,21 +388,27 @@ header .img-bg img{
 	font-weight: 300;
 }
 
+#contador .texto-1, #contador .texto-2 {
+	font-weight: bold;
+}
+
 #contador .texto-2 {
 	margin-top: 30px;
 }
 
 #contador .texto-3 {
+	font-size: 16px;
+    font-family: 'Open sans', sans-serif;
 	font-weight: 300;
 }
 
 @media screen and (max-width: 767px) {
 	#contador .cuenta-regresiva {
-		font-size: 35px;
+		font-size: 40px;
 	}
 
 	#contador .texto-2 {
-		margin-top: 40px;
+		margin-top: 35px;
 	}
 
 	#contador .texto-2, #contador .texto-3 {
@@ -406,15 +438,19 @@ header .img-bg img{
     font-size: 14px;
 }
 
+@media screen and (max-width: 767px) {
+	#fin p{padding: 18px 0 0 85px}
+}
+
 #fin .corporativo .logo.uc{
 	width: 14px;
 	height: 52px;
 }
 
 #fin .corporativo .logo.umbro{
-	width: 32px;
-	height: 22px;
-	padding-top: 10px;
+	width: 60px;
+    height: 30px;
+    padding-top: 10px;
 }
 
 
