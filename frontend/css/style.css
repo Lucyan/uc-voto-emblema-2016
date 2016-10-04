@@ -533,6 +533,12 @@ header .img-bg img{
 	padding-left: 20px;
 }
 
+@media screen and (max-width: 767px) {
+	.resena .info {
+		width: 100%;
+	}
+}
+
 .resena .info p {
 	font-size: 15px;
 }
