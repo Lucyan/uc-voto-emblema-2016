@@ -279,8 +279,8 @@ header .img-bg img{
 	background-color: #0079C9;
 }
 
-#voto .opcion.a{position: absolute; left:0;}
-#voto .opcion.b{position: absolute; right:0;}
+#voto .opcion.a{position: absolute; right:0;}
+#voto .opcion.b{position: absolute; left:0;}
 
 #voto .resultados {
 	padding-top: 90px;
