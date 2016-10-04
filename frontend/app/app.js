@@ -7,5 +7,5 @@ var votoEmblemaAPP = angular.module("votoEmblemaAPP",["ngRoute","ui.bootstrap", 
  **/
 
 votoEmblemaAPP.controller('mainController', ['$scope', function ($scope) {
-
+	
 }]);

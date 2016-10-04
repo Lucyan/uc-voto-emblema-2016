@@ -10,7 +10,6 @@ votoEmblemaAPP.factory("User", function ($http, ezfb, $rootScope){
 				var _this = this;
 				$http.get(baseAPI + 'me').then(function(resp) {
 					_this.data = resp.data;
-					console.log(_this.data);
 					$rootScope.userLogin = true;
 					if (callback) callback();
 				}, function(resp) {

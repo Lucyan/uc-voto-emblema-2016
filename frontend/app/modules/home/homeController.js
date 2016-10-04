@@ -1,4 +1,4 @@
-votoEmblemaAPP.controller("homeController", function ($scope, $rootScope, User) {
+votoEmblemaAPP.controller("homeController", function ($scope, $rootScope, User, Compartir) {
 	$scope.tryvote = false;
 	$scope.yavoto = false;
 	$scope.gracias = false;
@@ -60,5 +60,13 @@ votoEmblemaAPP.controller("homeController", function ($scope, $rootScope, User) 
  		$scope.gracias = false;
  		$scope.showResena1 = false;
  		$scope.showResena2 = false;
+ 	}
+
+ 	$scope.shareFB = function() {
+ 		Compartir.fb();
+ 	}
+
+ 	$scope.shareTW = function() {
+ 		Compartir.tw();
  	}
 });
