@@ -127,7 +127,13 @@
 <div class="ya-voto malla" ng-show="yavoto">
 	<div class="content">
 		<i class="fa fa-times btn-close" aria-hidden="true" ng-click="hidePopup();"></i>
-		<p>YA VOTASTE</p>
+		<h1>Ya Votaste</h1>
+			<div>Es sólo un voto por usuario. <br>
+			Comparte esta votación con tus amigos cruzados!</div>
+			<div class="redes">
+				<img src="img/redes/facebook.png" ng-click="shareFB();">
+				<img src="img/redes/twitter.png" ng-click="shareTW();">
+			</div>
 	</div>
 </div>
 
@@ -137,7 +143,7 @@
 		<img ng-src="{{graciasImg}}" class="opcion">
 		<div class="info">
 			<h1>¡Gracias por tu voto!</h1>
-			<div>Comparte esta encuesta con tus amigos</div>
+			<div>Comparte esta votación con tus amigos</div>
 			<div class="redes">
 				<img src="img/redes/facebook.png" ng-click="shareFB();">
 				<img src="img/redes/twitter.png" ng-click="shareTW();">
