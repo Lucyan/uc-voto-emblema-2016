@@ -30,7 +30,7 @@ votoEmblemaAPP.directive('countdown', [
             return [
                 '<span class="item dias">&nbsp;&nbsp;' + days + '&nbsp;&nbsp;<span class="label">Dias</span></span> : ',
                 '<span class="item horas">&nbsp;&nbsp;' + hours + '&nbsp;&nbsp;<span class="label">Horas</span></span> : ',
-                '<span class="item minutos">&nbsp;&nbsp;' + hours + '&nbsp;&nbsp;<span class="label">Minutos</span></span>'
+                '<span class="item minutos">&nbsp;&nbsp;' + minutes + '&nbsp;&nbsp;<span class="label">Minutos</span></span>'
             ].join('');
         }
     };
