@@ -11,20 +11,25 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 llamado">
+				<div class="col-xs-11 llamado">
 					<h1>¡UN HOMENAJE <br>
 						A NUESTRA <br>
 						HISTORIA!
 					</h1>
 					<img src="img/OpcionB.png">
-					<img src="img/OpcionA.png">
+					<!-- <img src="img/OpcionA.png"> -->
 				</div>
 			</div>
 			
 			<div class="row descripcion">
+				<!--
 				<div class="col-xs-12">
 					<p>¡Te invitamos a votar! Porque queremos que seas tú el que elijas cuál de estas históricas insignias luciremos en nuestra camiseta conmemorativa de los<br><b> 80 años de Universidad Católica</b>, que utilizaremos durante el mes de abril de 2017.</p>
 					<p>Antes de votar, te invitamos a revisar la reseña de cada insignia.</p>
+				</div>
+				-->
+				<div class="col-xs-12">
+					<p>Ya tenemos insignia ganadora, la que volverá a lucir en la camiseta conmemorativa que usaremos durante el mes de aniversario para celebrar nuestros <b>80 años de historia</b>.</p>
 				</div>
 			</div>
 		</div>
@@ -34,17 +39,17 @@
 	</div>
 
 	<div class="img-bg">
-		<img src="img/bg-header.jpg">
+		<img src="img/bg-header-win.jpg">
 	</div>
 </header>
-
+<!--
 <div id="fb-connect-space" ng-show="!userLogin">
 	<div class="wrap">
 		Para Votar, debes conectarte con Facebook 
 		<img src="img/btn-face.png" class="fb-btn" ng-click="login();">
 	</div>
 </div>
-
+-->
 <section id="voto">
 	<div class="wrap">
 		<h2>¿Cuál debe ser la insignia conmemorativa?</h2>
@@ -54,9 +59,12 @@
 			<h2>Orígenes</h2>
 			<a href="#" class="para-resena" ng-click="showResena2 = true">Ver reseña</a>
 			<img src="img/OpcionB-voto.jpg">
+			<h2>Ganadora</h2>
+			<!--
 			<span class="boton-voto">
 				<a href="#" ng-click="votar(2);">votar</a>
 			</span>
+			-->
 		</div>
 
 		<div class="opcion a">
@@ -64,9 +72,11 @@
 			<h2>Histórica</h2>
 			<a href="#" class="para-resena" ng-click="showResena1 = true">Ver reseña</a>
 			<img src="img/OpcionA-voto.jpg">
+			<!--
 			<span class="boton-voto">
 				<a href="#" ng-click="votar(1);">votar</a>
 			</span>
+			-->
 		</div>
 		
 		<div class="resultados">
@@ -90,7 +100,9 @@
 		</div>
 	</div>
 </section>
+
 <footer>
+	<!--
 	<div id="contador">
 		<div class="wrap">
 			<span class="texto-1">Quedan solo</span>
@@ -102,6 +114,7 @@
 			<div class="texto-3">12:00hrs. Vota ahora y sé parte de la historia.</div>
 		</div>
 	</div>
+	-->
 	<div id="fin">
 		<div class="wrap">
 			<div class="corporativo">
